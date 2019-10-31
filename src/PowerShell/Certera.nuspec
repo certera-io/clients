@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+   
+       http://www.apache.org/licenses/LICENSE-2.0
+   
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<package>
+  <metadata>
+    <id>Certera</id>
+    <title>Certera</title>
+    <version>1.0.0</version>
+    <authors>Certera</authors>
+    <owners>Certera</owners>
+    <license type="file">LICENSE.txt</license>
+    <projectUrl>https://certera.io</projectUrl>
+    <icon>icon.png</icon>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Certera PowerShell scripts make it easy to retrieve and apply the certificates and key stored in a Certera server.</description>
+    <language>en-us</language>
+    <copyright>Certera</copyright>
+    <tags>certera certificate key security encryption tls ssl iis azure</tags>
+  </metadata>
+  <files>
+    <file src="icon.png" target="" />
+    <file src="Module\**\*" target="" />
+    <file src="LICENSE.txt" target="" />
+  </files>
+</package>
