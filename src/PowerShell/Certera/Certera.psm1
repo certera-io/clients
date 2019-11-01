@@ -27,7 +27,7 @@ function Write-Timing
 Write-Timing ('BEGIN')
 
 $IsPSCore = $PSVersionTable['PSEdition'] -eq 'Core'
-	
+    
 # IIS
 $exportIisFunctions = $false
 if( (Test-Path -Path 'env:SystemRoot') )
@@ -51,6 +51,6 @@ $functionRoot = Join-Path -Path $PSScriptRoot -ChildPath 'Functions' -Resolve
 
 Get-ChildItem -Path (Join-Path -Path $functionRoot -ChildPath '*') -Filter '*.ps1' | 
     ForEach-Object { 
-		Write-Debug "Dot-sourcing $($_.FullName)"
+        Write-Debug "Dot-sourcing $($_.FullName)"
         . $_.FullName 
     }

@@ -41,7 +41,7 @@
     
     # Description of the functionality provided by this module
     Description = @'
-	Gets certificates, keys from a specified Certera instance and helps store or apply the certificate to a file, IIS or Azure App Service.
+    Gets certificates, keys from a specified Certera instance and helps store or apply the certificate to a file, IIS or Azure App Service.
 '@
 
     # Minimum version of the Windows PowerShell engine required by this module
@@ -83,9 +83,9 @@
     NestedModules = @()
 
     # Functions to export from this module
-    FunctionsToExport = @(	
+    FunctionsToExport = @(    
                             'Get-Cert',
-							'Get-Key',
+                            'Get-Key',
                             'Set-CertFile',
                             'Set-KeyFile',
                             'Set-AzAppSvcCert',
@@ -125,7 +125,7 @@
 
             # ReleaseNotes of this module
             ReleaseNotes = @'
-* 1.0.0 - Initial release			
+* 1.0.0 - Initial release            
 '@
         } # End of PSData hashtable
     

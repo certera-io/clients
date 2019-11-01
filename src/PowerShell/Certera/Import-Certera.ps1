@@ -33,12 +33,12 @@ $CerteraPsd1Path = Join-Path -Path $PSScriptRoot -ChildPath 'Certera.psd1' -Reso
 
 & {
     
-	if ($Force -and (Get-Module -Name 'Certera'))
-	{
-		Write-Host "Removing Certera Module"
-		Remove-Module -Name 'Certera' -Force
-	}
-	
-	Import-Module -Name $CerteraPsd1Path -Force:$Force
+    if ($Force -and (Get-Module -Name 'Certera'))
+    {
+        Write-Host "Removing Certera Module"
+        Remove-Module -Name 'Certera' -Force
+    }
+    
+    Import-Module -Name $CerteraPsd1Path -Force:$Force
     
 }
